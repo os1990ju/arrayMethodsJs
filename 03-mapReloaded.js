@@ -24,17 +24,17 @@ console.log("orders", orders);
 //console.log('new orders', newOrders)
 
 const personas = [
-  { nombre: "Oscar", edad: 32, anoNacimiento: 1990},
+  { nombre: "Oscar", edad: 32, anoNacimiento: 1990 },
   { nombre: "Francia", edad: 42, anoNacimiento: 1980 },
-  { nombre: "Josue", edad: 2, anoNacimiento: 2019 }
+  { nombre: "Josue", edad: 2, anoNacimiento: 2019 },
 ];
 
 //crear un arreglo inumtable con la nueva propiedad llamada lugar de nacimiento
-function anadirPropiedadCiudad(array){
-    return array.map((persona)=>({
-        ...persona,
-        ciudad:'Cali'
-    }));
+function anadirPropiedadCiudad(array) {
+  return array.map((persona) => ({
+    ...persona,
+    ciudad: "Cali",
+  }));
 }
-newPersons=anadirPropiedadCiudad(personas);
-console.log(newPersons)
+newPersons = anadirPropiedadCiudad(personas);
+console.log(newPersons);
